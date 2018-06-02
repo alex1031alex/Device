@@ -1,14 +1,19 @@
 .site-menu {
-  .list-reset;
   display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
 }
 
 .site-menu__item {
   &_catalog {
+    position: relative;
+    bottom: 18px;
     margin-right: auto;
   }
 
   &_delivery {
+    margin-left: auto;
     margin-right: 34px;
   }
 
@@ -31,25 +36,10 @@
   letter-spacing: 0.2em;
   color: #000000;
 
-  &_plus {
-    position: relative;
-
-    padding-right: 28px;
-
-    &::before {
-      .pseudo(2px;16px);
-      top: 3px;
-      right: 7px;
-      background-color: rgba(0, 0, 0, 0.3);
-    }
-
-    &::after {
-      .pseudo(16px;2px);
-      top: 10px;
-      right: 0;
-      background-color: rgba(0, 0, 0, 0.3);
-    }
-  }
+  &_catalog {
+    display: flex;
+    margin-bottom: 30px;
+   }
 
   &_contacts span {
     letter-spacing: 0;
@@ -63,5 +53,25 @@
   &:active {
     color: rgba(0, 0, 0, 0.3);
   }
+}
+
+.site-menu__plus {
+  display: block;
+  width: 16px;
+  height: 18px;
+  margin-left: 12px;
+  opacity: 0.3;
+  background-image: url("../img/icon-plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.site-menu__catalog-menu {
+  visibility: hidden;
+}
+
+.site-menu__item_catalog:hover .site-menu__catalog-menu,
+.site-menu__item_catalog:focus .site-menu__catalog-menu {
+  visibility: visible;
 }
 
