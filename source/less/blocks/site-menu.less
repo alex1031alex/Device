@@ -2,3 +2,66 @@
   .list-reset;
   display: flex;
 }
+
+.site-menu__item {
+  &_catalog {
+    margin-right: auto;
+  }
+
+  &_delivery {
+    margin-right: 34px;
+  }
+
+  &_warranty {
+    margin-right: 108px;
+  }
+
+  &_contacts {
+    margin-right: 0;
+  }
+}
+
+.site-menu__link {
+  font-size: 18px;
+  line-height: 1.0;
+  font-family: 'Gilroy';
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+  color: #000000;
+
+  &_plus {
+    position: relative;
+
+    padding-right: 28px;
+
+    &::before {
+      .pseudo(2px;16px);
+      top: 3px;
+      right: 7px;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    &::after {
+      .pseudo(16px;2px);
+      top: 10px;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &_contacts span {
+    letter-spacing: 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
