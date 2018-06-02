@@ -1,12 +1,25 @@
 .user-menu {
-  .list-reset;
   display: flex;
   align-items: center;
+  padding: 0;
+  list-style: none;
 }
 
 .user-menu__item {
   &_search {
     margin-right: auto;
+  }
+
+  &_login {
+    margin-right: 216px;
+  }
+
+  &_compare {
+    margin-right: 40px;
+  }
+
+  &_cart {
+    margin-right: 0;
   }
 }
 
@@ -21,7 +34,6 @@
   color: #000000;
 
   &_login {
-    margin-right: 216px;
     padding-left: 26px;
 
     background-image: url("../img/icon-login.svg");
@@ -30,7 +42,6 @@
   }
 
   &_compare {
-    margin-right: 40px;
     padding-left: 22px;
 
     background-image: url("../img/icon-compare.svg");
@@ -39,7 +50,6 @@
   }
 
   &_cart {
-    margin-right: 0;
     padding-left: 26px;
 
     background-image: url("../img/icon-cart.svg");
