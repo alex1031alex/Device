@@ -67,7 +67,50 @@
         </ul>
       </nav>
     </header>
-  <main class="page-main"></main>
-<footer class="page-footer"></footer>
+    <main class="page-main">
+      <section class="slider">
+        <div class="slider__top-bar"></div>
+        <input type="radio" name="slider" id="radio-1" class="slider__radio slider__radio_first visually-hidden">
+        <input type="radio" name="slider" id="radio-2" class="slider__radio slider__slide_second visually-hidden">
+        <input type="radio" name="slider" id="radio-3" class="slider__radio slider__slide_third visually-hidden">
+        <ul class="slider__list">
+          <li class="slider__item slider__item_first hidden">
+            <div class="slider__image-wrapper">
+              <img src="img/slider-1.png" alt="Палка для селфи">
+            </div>
+            <div class="slider__description">
+              <h3 class="slider__title">Делай селфи,<br> как Бен Стиллер!</h3>
+              <p class="slider__text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм
+              </p>
+              <a class="slider__link-more" href="#">Подробнее</a>
+              <table class="slider__table">
+                <tr>
+                  <td class="slider__cell slider__cell_data">8,5 м</td>
+                  <td class="slider__cell slider__cell_data">5 кг</td>
+                  <td class="slider__cell slider__cell_data">Карбон</td>
+                </tr>
+                <tr>
+                  <th class="slider__cell slider__cell_head">Длина палки</th>
+                  <th class="slider__cell slider__cell_head">Вес палки</th>
+                  <th class="slider__cell slider__cell_head">Материал</th>
+                </tr>
+              </table>
+            </div>
+          </li>
+          <li class="slider__item slider__item_second hidden">
+            <div class="slider__slide slider__slide_second"></div>
+          </li>
+          <li class="slider__item slider__item_third hidden">
+            <div class="slider__slide slider__slide_third"></div>
+          </li>
+        </ul>
+        <div class="slider__control-wrapper">
+          <label class="slider__control" for="radio-1"></label>
+          <label class="slider__control" for="radio-2"></label>
+          <label class="slider__control" for="radio-3"></label>
+        </div>
+      </section>
+    </main>
+  <footer class="page-footer"></footer>
 </body>
 </html>
