@@ -1,9 +1,23 @@
 .catalog-menu {
   .list-reset;
+  position: absolute;
+  top: 158px;
+  left:0;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 552px;
+  box-sizing: border-box;
+  width: 1160px;
+  padding-bottom: 34px;
+  padding-left: 60px;
+  padding-right: 548px;
+
+  background-color: @yellow;
+}
+
+.catalog-menu:hover {
+  visibility: visible;
 }
 
 .catalog-menu__item:nth-child(5) {
