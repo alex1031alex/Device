@@ -79,7 +79,7 @@
 
 .slider__text {
   width: 482px;
-  margin: 0 0 52px 0;
+  margin: 0 0 42px 0;
   padding: 0;
 
   font-size: 15px;
@@ -95,7 +95,7 @@
   width: 220px;
 
   font-size: 18px;
-  line-height: 1.2;
+  line-height: 40px;
   font-family: 'Gilroy';
   font-weight: 800;
   text-align: center;
@@ -106,11 +106,22 @@
 
   &::after {
     .pseudo(100%;8px);
-    top: 6px;
+    top: 40%;
     left: 0;
     background-color: @orange;
     background-repeat: no-repeat;
     z-index: -1;
+  }
+
+  &:hover::after,
+  &:focus::after,
+  &:active::after {
+    height: 100%;
+    top: 0;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
   }
 }
 
