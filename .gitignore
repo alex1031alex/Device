@@ -5,6 +5,7 @@
 *.pdf
 *.psd
 *.sublime*
+Specification-device.md
 build/
 layout/
 node_modules/
