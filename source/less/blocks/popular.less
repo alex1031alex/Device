@@ -1,6 +1,7 @@
 .popular__list {
-  // display: flex;
-  // justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 40px;
   margin: 0;
   padding: 0;
 
@@ -10,6 +11,82 @@
 
 .popular__item {
   width: 160px;
+}
+
+.popular__link {
+  position: relative;
+
+  display: block;
+  padding-top: 196px;
+
+  font-size: 18px;
+  line-height: 21px;
+  font-family: 'Gilroy';
+  font-weight: 800;
+  text-decoration: none;
+  color: #000000;
+
+  &::before {
+    .pseudo(100%; 160px);
+    top: 0;
+    left: 0;
+
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  &::after {
+    .pseudo(100%;160px);
+    top: 0;
+    left: 0;
+
+    background-color: @yellow;
+  }
+
+  &_1::before {
+    background-image: url("../img/popular-1.svg");
+    background-position: center;
+  }
+
+  &_2::before {
+    background-image: url("../img/popular-2.svg");
+    background-position: center bottom;
+  }
+
+  &_3::before {
+    background-image: url("../img/popular-3.svg");
+    background-position: center;
+  }
+
+  &_4::before {
+    background-image: url("../img/popular-4.svg");
+    background-position: center;
+  }
+
+  &_5::before {
+    background-image: url("../img/popular-5.svg");
+    background-position: center;
+  }
+
+  &_6::before {
+    background-image: url("../img/poppular-6.svg");
+    background-position: center;
+  }
+}
+
+.popular__link:hover,
+.popular__link:focus {
+  &::after {
+    background-color: @orange;
+  }
+}
+
+.popular__link:active {
+  color: rgba(0, 0, 0, 0.3);
+
+  &::before {
+    opacity: 0.3;
+  }
 }
 
 
