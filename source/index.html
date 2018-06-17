@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body class="page">
-    <header class="page-header">
+    <header class="page-header container">
       <div class="page-header__logo logo">
         <a class="logo__link" href="https://htmlacademy.ru/intensive/htmlcss">
           <img class="logo__image" src="img/logo.png" width="164" height="36" alt="магазин Девайс">
@@ -69,7 +69,7 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Магазин Девайс</h1>
-      <section class="page-main__slider slider">
+      <section class="page-main__slider slider container">
         <h2 class="visually-hidden">Хиты сезона</h2>
         <input type="radio" name="slider" id="radio-1" class="slider__radio slider__radio_first visually-hidden" checked>
         <input type="radio" name="slider" id="radio-2" class="slider__radio slider__radio_second visually-hidden">
@@ -166,7 +166,7 @@
           <label class="slider__control slider__control_third" for="radio-3"></label>
         </div>
       </section>
-      <section class="page-main__popular popular">
+      <section class="page-main__popular popular container">
         <h2 class="visually-hidden">Популярные товары</h2>
         <ul class="popular__list">
           <li class="popular__item">
@@ -189,37 +189,41 @@
           </li>
         </ul>
       </section>
-      <section class="services">
-        <h2 class="visually-hidden">Наши услуги</h2>
-        <input type="radio" class="services__radio services__radio_first visually-hidden" id="radio-11" checked>
-        <input type="radio" class="services__radio services__radio_second visually-hidden" id="radio-22">
-        <input type="radio" class="services__radio servises__radio_third visually-hidden" id="radio-33">
-        <div class="services__controls">
-          <label for="radio-11" class="services__control services__control_first" checked>
-            <span class="services__control-text">Доставка</span>
-          </label>
-          <label for="radio-22" class="services__control services__control_second">
-            <span class="services__control-text">Гарантия</span>
-          </label>
-          <label for="radio-33" class="services__control services__control_third">
-            <span class="services__control-text">Кредит</span>
-          </label>
+      <section class="page-main__services services">
+        <div class="services__inner container">
+          <h2 class="visually-hidden">Наши услуги</h2>
+          <input type="radio" name="services-slider" class="services__radio services__radio_delivery visually-hidden" id="radio-11" checked>
+          <input type="radio" name="services-slider" class="services__radio services__radio_warranty visually-hidden" id="radio-22">
+          <input type="radio" name="services-slider" class="services__radio services__radio_credit visually-hidden" id="radio-33">
+          <div class="services__controls">
+            <label for="radio-11" class="services__control services__control_delivery">
+              Доставка
+            </label>
+            <label for="radio-22" class="services__control services__control_warranty">
+              Гарантия
+            </label>
+            <label for="radio-33" class="services__control services__control_credit">
+              Кредит
+            </label>
+          </div>
+          <ul class="services__list">
+            <li class="services__item services__item_delivery">
+              <h3 class="services__title">Доставка</h3>
+              <p class="services__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </li>
+            <li class="services__item services__item_warranty">
+              <h3 class="services__title">Гарантия</h3>
+              <p class="services__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+              Товар, не дом, конечно же.</p>
+            </li>
+            <li class="services__item services__item_credit">
+              <h3 class="services__title">Кредит</h3>
+              <p class="services__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            </li>
+          </ul>
         </div>
-        <ul class="services__list">
-          <li class="services__item services__item_delivery">
-            <h3 class="services__title">Доставка</h3>
-            <p class="services__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </li>
-          <li class="services__item services__item_warranty">
-            <h3 class="services__title">Гарантия</h3>
-            <p class="services__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-            Товар, не дом, конечно же.</p>
-          </li>
-          <li class="services__item services__item_credit">
-            <h3 class="services__title">Кредит</h3>
-            <p class="services__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-          </li>
-        </ul>
+      </section>
+      <section class="brands">
       </section>
     </main>
   <footer class="page-footer"></footer>
