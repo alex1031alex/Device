@@ -72,6 +72,8 @@
   position: relative;
   bottom: 20px + @services-padding-top;
 
+  display: flex; //Чтобы айтемы растягивались по всей высоте списка//
+  flex-direction: column;
   margin: 0;
   padding: 0;
 
@@ -80,7 +82,7 @@
 
 .services__item {
   display: none;
-  min-height: 100%;
+  flex-grow: 1;
   padding-top: @services-padding-top;
   padding-right: 318px;
 
