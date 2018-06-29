@@ -17,7 +17,7 @@
         </a>
       </div>
       <nav class="main-nav">
-        <ul class="main-nav__user-menu user-menu">
+        <ul class="main-nav__user-menu user-menu user-menu_full">
           <li class="user-menu__item user-menu__item_search">
             <form class="search" action="#" method="get">
               <input class="search__field" type="search" name="search" placeholder="Поиск по сайту">
@@ -25,18 +25,35 @@
             </form>
           </li>
           <li class="user-menu__item user-menu__item_login">
-            <a class="user-menu__link user-menu__link_login" href="#">Войти</a>
+            <a class="user-menu__link user-menu__link_login" href="#">
+              <svg class="user-menu__icon user-menu__icon_fill_dark" width="13" height="12">
+                <use xlink:href="#s-icon-login"></use>
+              </svg>
+              <span>Войти</span>
+            </a>
           </li>
           <li class="user-menu__item user-menu__item_compare">
-            <a class="user-menu__link user-menu__link_compare" href="#">Сравнить</a>
+            <a class="user-menu__link user-menu__link_compare" href="#">
+              <svg class="user-menu__icon user-menu__icon_fill_dark" width="10" height="10">
+                <use xlink:href="#s-icon-compare"></use>
+              </svg>
+              <span>Сравнить</span>
+            </a>
           </li>
           <li class="user-menu__item user-menu__item_cart">
-            <a class="user-menu__link user-menu__link_cart" href="#">Корзина</a>
+            <a class="user-menu__link user-menu__link_cart" href="#">
+              <svg class="user-menu__icon user-menu__icon_fill_dark" width="12" height="12">
+                <use xlink:href="#s-icon-cart"></use>
+              </svg>
+              <span>Корзина</span>
+            </a>
           </li>
         </ul>
-        <ul class="main-nav__site-menu site-menu">
+        <ul class="main-nav__site-menu site-menu site-menu_full">
           <li class="site-menu__item site-menu__item_catalog">
-            <a class="site-menu__link site-menu__link_catalog" href="catalog.html">Каталог товаров<span class="site-menu__plus"></span></a>
+            <a class="site-menu__link site-menu__link_flexbox" href="catalog.html">
+              Каталог товаров<span class="site-menu__plus"></span>
+            </a>
             <ul class="site-menu__catalog-menu catalog-menu">
               <li class="catalog-menu__item">
                 <a class="catalog-menu__link" href="#">Виртуальная реальность</a>
@@ -65,7 +82,9 @@
             <a class="site-menu__link" href="#">Гарантия</a>
           </li>
           <li class="site-menu__item site-menu__item_contacts">
-            <a class="site-menu__link site-menu__link_contacts" href="#">Контакт<span>ы</span></a>
+            <a class="site-menu__link" href="#">
+              Контакты
+            </a>
           </li>
         </ul>
       </nav>
@@ -242,49 +261,84 @@
             <img class="logo__image logo__image_orange" src="img/logo.png" width="164" height="36" alt="магазин Девайс">
           </a>
         </div>
-        <ul class="page-footer__user-menu user-menu">
+        <ul class="page-footer__user-menu user-menu user-menu_cut">
           <li class="user-menu__item user-menu__item_login">
-            <a class="user-menu__link user-menu__link_login" href="#">Войти</a>
+            <a class="user-menu__link user-menu__link_login user-menu__link_color_white" href="#">
+              <svg class="user-menu__icon user-menu__icon_fill_orange" width="13" height="12">
+                <use xlink:href="#s-icon-login"></use>
+              </svg>
+              <span>Войти</span>
+            </a>
           </li>
           <li class="user-menu__item user-menu__item_compare">
-            <a class="user-menu__link user-menu__link_compare" href="#">Сравнить</a>
+            <a class="user-menu__link user-menu__link_compare user-menu__link_color_white" href="#">
+              <svg class="user-menu__icon user-menu__icon_fill_orange" width="10" height="10">
+                <use xlink:href="#s-icon-compare"></use>
+              </svg>
+              <span>Сравнить</span>
+            </a>
           </li>
           <li class="user-menu__item user-menu__item_cart">
-            <a class="user-menu__link user-menu__link_cart" href="#">Корзина</a>
+            <a class="user-menu__link user-menu__link_cart user-menu__link_color_white" href="#">
+              <svg class="user-menu__icon user-menu__icon_fill_orange" width="12" height="12">
+                <use xlink:href="#s-icon-cart"></use>
+              </svg>
+              <span>Корзина</span>
+            </a>
           </li>
         </ul>
-        <p class="page-footer__address">
+        <p class="page-footer__contacts page-footer__contacts_address">
           г.Москва, ул. Строителей, 15
         </p>
-        <ul class="page-footer__site-menu site-menu">
+        <ul class="page-footer__site-menu site-menu site-menu_cut">
           <li class="site-menu__item site-menu__item_delivery">
-            <a class="site-menu__link" href="#">Доставка</a>
+            <a class="site-menu__link site-menu__link_color_white" href="#">Доставка</a>
           </li>
           <li class="site-menu__item site-menu__item_warranty">
-            <a class="site-menu__link" href="#">Гарантия</a>
+            <a class="site-menu__link site-menu__link_color_white" href="#">Гарантия</a>
           </li>
           <li class="site-menu__item site-menu__item_contacts">
-            <a class="site-menu__link site-menu__link_contacts" href="#">Контакты</a>
+            <a class="site-menu__link site-menu__link_color_white" href="#">Контакты</a>
           </li>
         </ul>
-        <p class="page-footer__phone">
+        <p class="page-footer__contacts page-footer__contacts_phone">
           Тел.: +7 (495) 495-95-95
         </p>
         <div class="page-footer__socials socials">
           <ul class="socials__list">
             <li class="socials__item">
-              <a href="" class="socials__link"><span class="visually-hidden">Facebook</span></a>
+              <a href="#" class="socials__link">
+                <span class="visually-hidden">Facebook</span>
+                <svg class="socials__icon" width="32" height="32">
+                  <use xlink:href="#s-icon-facebook"></use>
+                </svg>
+              </a>
             </li>
             <li class="socials__item">
-              <a href="" class="socials__link"><span class="visually-hidden">Instagram</span></a>
+              <a href="#" class="socials__link">
+                <span class="visually-hidden">Instagram</span>
+                <svg class="socials__icon" width="32" height="32">
+                  <use xlink:href="#s-icon-instagram"></use>
+                </svg>
+              </a>
             </li>
             <li class="socials__item">
-              <a href="" class="socials__link"><span class="visually-hidden">Twitter</span></a>
+              <a href="#" class="socials__link">
+                <span class="visually-hidden">Twitter</span>
+                <svg class="socials__icon" width="32" height="32">
+                  <use xlink:href="#s-icon-twitter"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
         <div class="page-footer__copyright">
-          <span class="visually-hidden">HTML Academy</span>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <span class="visually-hidden">HTML Academy</span>
+            <svg class="page-footer__academy-icon" width="27" height="34">
+              <use xlink:href="#s-logo-html"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
