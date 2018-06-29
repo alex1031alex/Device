@@ -1,3 +1,76 @@
 .page-footer {
   background-color: @dark-gray;
 }
+
+.page-footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 68px;
+  padding-bottom: 66px;
+}
+
+.page-footer__inner::before {
+  align-self: center;
+  order: 1;
+  content: "";
+  padding: 3.5px 40px 3.5px 40px;
+  font-size: 0;
+  background-color: @orange;
+}
+
+.page-footer__logo {
+  margin-bottom: 30px;
+  margin-right: 500px;
+}
+
+.page-footer__user-menu {
+  flex-basis: 325px;
+}
+
+.page-footer__site-menu {
+  flex-basis: 440px;
+  margin-bottom: 68px;
+}
+
+.page-footer__contacts {
+  flex-basis: 330px;
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 30px;
+  font-family: 'Open Sans';
+  color: #ffffff;
+
+  &_phone {
+    text-align: right;
+  }
+}
+
+.page-footer__socials {
+  width: 142px;
+  order: 2;
+}
+
+.page-footer__copyright {
+  width: 80px;
+  order: 3;
+
+  text-align: right;
+}
+
+.page-footer__academy-icon {
+  color: @orange;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+
