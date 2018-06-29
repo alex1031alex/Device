@@ -4,9 +4,13 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  &_cut {
+    justify-content: space-between;
+  }
 }
 
-.site-menu__item {
+.site-menu_full .site-menu__item {
   &_catalog {
     padding-bottom: 50px;
     margin-right: auto;
@@ -20,13 +24,16 @@
   &_warranty {
     margin-right: 108px;
   }
+}
 
-  &_contacts {
-    margin-right: 0;
-  }
+.site-menu__item:last-child .site-menu__link {
+  margin-right: -0.2em; //Чтобы убрать пробел справа от ссылки КОНТАКТЫ
 }
 
 .site-menu__link {
+  display: block;
+
+
   font-size: 18px;
   line-height: 1.0;
   font-family: 'Gilroy';
@@ -36,12 +43,12 @@
   letter-spacing: 0.2em;
   color: #000000;
 
-  &_catalog {
+  &_flexbox {
     display: flex;
    }
 
-  &_contacts span {
-    letter-spacing: 0;
+  &_color_white {
+    color: #ffffff;
   }
 
   &:hover,

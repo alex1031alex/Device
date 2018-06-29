@@ -3,9 +3,13 @@
   align-items: center;
   padding: 0;
   list-style: none;
+
+  &_cut {
+    justify-content: space-between;
+  }
 }
 
-.user-menu__item {
+.user-menu_full .user-menu__item {
   &_search {
     margin-right: auto;
   }
@@ -17,13 +21,10 @@
   &_compare {
     margin-right: 40px;
   }
-
-  &_cart {
-    margin-right: 0;
-  }
 }
 
 .user-menu__link {
+  position: relative;
   display: block;
 
   font-family: 'Open Sans';
@@ -35,26 +36,32 @@
 
   &_login {
     padding-left: 26px;
-
-    background-image: url("../img/icon-login.svg");
-    background-repeat: no-repeat;
-    background-position: 0 center;
   }
 
   &_compare {
     padding-left: 22px;
-
-    background-image: url("../img/icon-compare.svg");
-    background-repeat: no-repeat;
-    background-position: 0 center;
   }
 
   &_cart {
     padding-left: 26px;
+  }
 
-    background-image: url("../img/icon-cart.svg");
-    background-repeat: no-repeat;
-    background-position: 0 center;
+  &_color_white {
+    color: #ffffff;
+  }
+}
+
+.user-menu__icon {
+  position: absolute;
+  bottom: 12px; //Высота самой иконки - 12px
+  left: 0;
+
+  &_fill_orange {
+    color: @orange;
+  }
+
+  &_fill_dark {
+    color: #272525;
   }
 }
 
