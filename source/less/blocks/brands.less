@@ -1,4 +1,25 @@
 .brands {
-  padding-top: 100px;
+  padding-top: 80px;
+  padding-bottom: 50px;
   background-color: #ffffff;
+}
+
+.brands__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+
+.brands__image {
+  display: block;
+  filter: grayscale(1);
+  opacity: 0.2;
+}
+
+.brands__link:hover .brands__image,
+.brands__link:focus .brands__image {
+  filter: grayscale(0);
+  opacity: 1.0;
 }
