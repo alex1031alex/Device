@@ -1,0 +1,41 @@
+.link {
+  position: relative;
+  z-index: 0;
+
+  box-sizing: border-box;
+  display: block;
+
+  font-size: 18px;
+  line-height: 40px;
+  font-family: 'Gilroy';
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+  color: #000000;
+
+  &::after {
+    .pseudo(100%;8px);
+    top: 40%;
+    left: 0;
+    z-index: -1;
+
+    background-color: @orange;
+    background-repeat: no-repeat;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    height: 100%;
+    top: 0;
+  }
+
+  &_active_standard:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &_active_black:active {
+    .black-control;
+  }
+}
