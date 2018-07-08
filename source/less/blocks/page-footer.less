@@ -7,7 +7,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 68px;
+  padding-top: 66px;
   padding-bottom: 66px;
 }
 
@@ -21,22 +21,25 @@
 }
 
 .page-footer__logo {
-  margin-bottom: 30px;
+  margin-bottom: @first-line-margin;
   margin-right: 500px;
 }
 
 .page-footer__user-menu {
   flex-basis: 325px;
+  margin-top: 0;
+  margin-bottom: @first-line-margin;
 }
 
 .page-footer__site-menu {
-  flex-basis: 440px;
-  margin-bottom: 68px;
+  flex-basis: 430px;
+  margin-bottom: @second-line-margin;
 }
 
 .page-footer__contacts {
   flex-basis: 330px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: @second-line-margin;
 
   font-size: 15px;
   line-height: 30px;
