@@ -1,4 +1,4 @@
-"use strict";
+"use strict"; /*Код выполняется в соответствии со стандартом ES2015*/
 
 module.exports = function(grunt) {
 
